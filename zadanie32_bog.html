@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <script type="text/javascript">
+        function klient(rozmiar_b, kolor_b, material_b, objetosc_b) {
+            this.rozmiar = rozmiar_b;
+            this.kolor = kolor_b;
+            this.material = material_b;
+            this.objetosc = objetosc_b;
+
+        }
+        klient.prototype.pudelko_pokaz_bogdan = function () {
+            alert(this.rozmiar + ' ' + this.kolor + ' ' + this.material + ' ' + this.objetosc);
+        };
+        var pudlo1 = new klient("Duze", "Bialy", "plastik", "50cm3");
+        var pudlo2 = new klient('Male', 'czarny', 'karton', '15cm3');
+        var pudlo3 = new klient('Srednie', 'zielony', 'szmata','25cm3');
+        pudlo1.pudelko_pokaz_bogdan();
+        pudlo2.pudelko_pokaz_bogdan();
+        pudlo3.pudelko_pokaz_bogdan();
+        document.write("dostęp do właściwości" + "<br>"); // poniżej dostęp do pól osoby1
+        document.write("Pierwsze pudło" + " " + pudlo1.rozmiar + " " + pudlo1.kolor + " " + pudlo1.material + " " + pudlo1.objetosc + "<br>");
+        document.write("Drugie pudło" + " " + pudlo2.rozmiar + " " + pudlo2.kolor + " " + pudlo2.material + " " + pudlo2.objetosc + "<br>");
+        document.write("Trzecie pudło" + " " + pudlo3.rozmiar + " " + pudlo3.kolor + " " + pudlo3.material + " " + pudlo3.objetosc);
+    </script>
+</head>
+
+<body>
+    <br>
+    <br>
+    programowanie obiektowe
+
+</body>
+
+</html>

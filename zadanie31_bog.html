@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <script type="text/javascript"> var pudelko =
+        {
+            kolor: 'czarny',
+            material: 'karton',
+            wielkosc: 'duzy',
+
+            pudelko_wyswietl_bogdan: function () {
+                document.write(this.material + ' ' + this.kolor + ' ' + this.wielkosc)
+            }
+        }
+        pudelko.pudelko_wyswietl_bogdan();
+        pudelko.objetosc = 30;
+        pudelko.wypisz = function(){ alert('Objetosc: ' + this.objetosc + ' cm^3') }
+        pudelko.wypisz();
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
